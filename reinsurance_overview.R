@@ -125,3 +125,17 @@ costs_per_reinusrance_type <- data.frame(
 rownames(costs_per_reinusrance_type) <- c("ECOMOR", "Quota", "XL")
 costs_per_reinusrance_type <- costs_per_reinusrance_type %>% 
   mutate(percentage = costs_reinsurer/total_costs)
+
+# Erwartete Schadenanzahl für den Rückversicherer
+1 - ppareto(M, alpha, beta)
+1 - ppareto(M_ecomor, alpha, beta)
+
+# Erwartete Schadenhöhe
+expected_both <- integrate(\(y) y  * dpareto(y, alpha, beta), beta, 1e10)$value
+expected_reinsurance_xl <- integrate(
+  \(y) (y - M)  * dpareto(y, alpha, beta), M, 1e10)$value
+expected_reinsurance_ecomor <- integrate(
+  \(y) (y - M_ecomor)  * dpareto(y, alpha, beta), M_ecomor, 1e10)$value
+
+expected_reinsurance_xl/expected_both
+expected_reinsurance_ecomor/expected_both

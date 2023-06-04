@@ -14,8 +14,16 @@ $$X_n := u + p\cdot n - \sum_{j=1} S_j$$
 - Exponentialprinzip
 
 ### Konsistenz
-Ein Prämeinprinzip heißt **konsistent**, wenn für eine Konstante $c$ gilt: $p(S +c) = p(S) + c$
+Ein Prämienprinzip heißt **konsistent**, wenn für eine nicht statistische Konstante $c$ gilt: $p(S +c) = p(S) + c$
+$\to$ die Konstante schlägt direkt und unverändert auf die Prämie durch
+#### Konsistente Prämienprinzipien
+Konsistenz haben wir für alle oben genannten Prinzipien mit Ausnahme des E-Wertprinzip gezeigt
 
+### Additivität
+Seien $S_1$ und $S_2$ zwei stochatisch unabhänginge Risiken. Dann heißt ein Prämienprinzip
+- **additiv**, wenn  $p(S_1 + S_2) = p(S_1) + p(S_2)$ gilt
+- **subadditiv**, wenn  $p(S_1 + S_2) \leq p(S_1) + p(S_2)$ gilt
+Von einem **Diversifikationseffekt** spricht man, wenn $p(S_1 + S_2) < p(S_1) + p(S_2)$
 
 ## Weitere Wichtige Defintionen
 - momenterzeugende Funktion $m_X$

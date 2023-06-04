@@ -1,6 +1,6 @@
 ## Annahme
 Der Gesamtschaden $S$ lässt sich durch
-$$ S = \sum^N_{i = 1} Y_i$$
+$$S = \sum^N_{i = 1} Y_i$$
 mit einer ganzzahligen Zufallsvariable $N$ und unabhängig, identisch verteilten Schadenshöhenverteilungen $Y_i$ beschreiben.
 
 >[!INFO] Frage
@@ -20,8 +20,10 @@ mit einer ganzzahligen Zufallsvariable $N$ und unabhängig, identisch verteilten
 ## Panjer-Klasse
 Eine Verteilung gehört zur Panjer-Klasse, wenn sie die folgende Rekursion erfüllt
 $$p(k+1) = \left(a - \frac{b}{k+1}\right)\cdot p(i)$$
-Diese Eigenschaft haben wir z.B. für 
-- ...
+Diese Eigenschaft haben wir z.B. für die
+- Poisson-Verteilung
+- Binomialverteilung
+- negative Binomialverteilung
 gezeigt.
 
 ### Panjer-Rekusrionsformel
